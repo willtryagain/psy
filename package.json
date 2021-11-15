@@ -21,5 +21,8 @@
   "dependencies": {
     "config": "^3.3.6",
     "react-scripts": "4.0.3"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
