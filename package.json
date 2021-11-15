@@ -1,0 +1,25 @@
+{
+  "name": "psych-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd frontend && npm run build",
+    "start:server": "node ./server/index.js",
+    "start": "npm run build && npm run start:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willtryagain/psy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willtryagain/psy/issues"
+  },
+  "homepage": "https://github.com/willtryagain/psy#readme",
+  "dependencies": {
+    "config": "^3.3.6"
+  }
+}
