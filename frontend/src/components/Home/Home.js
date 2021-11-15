@@ -27,7 +27,7 @@ class Home extends Component {
     };
 
     axios
-      .post(`${process.env.API_URL}/${props.match.params.id}`, data)
+      .post('https://psy-iiit.herokuapp.com/api/experiment', data)
       .then(res => {
         this.setState({
           name: '',
