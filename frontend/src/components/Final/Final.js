@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { useParams } from "react-router-dom";
-import ReactPlayer from 'react-player'
 import axios from 'axios';
 
 function Final(){
@@ -49,7 +48,7 @@ function Final(){
 
   return (
     <div className="container text-center p-5">
-      <h1>{et == 2 || et == 3 ? "STEP 3/3" : "STEP 4/4" }: CHOOSE A GAME</h1>
+      <h1>{et === 2 || et === 3 ? "STEP 3/3" : "STEP 4/4" }: CHOOSE A GAME</h1>
       <p> Thank you for being part of this experiment. The experiment is a part of a project being done by IIIT-H students to study the effects of word memorability. The experiment will take around 5 minutes to complete. We appreciate your patience and time taken to be part of this experiment.</p>
       <br/>
       <p>If you had to choose one of the games to play, which one will you choose? Select a game by clicking on the radio button below and click on the proceed button</p>
@@ -57,11 +56,11 @@ function Final(){
       <div className="m-5">
         <div className="row">
           <div className="col-lg-6">
-            <img src="/Bling.jpeg" width="100%"/>
+            <img alt="Bling" src="/Bling.jpeg" width="100%"/>
             <input type="radio" id="bling" name="game" value="BLING"/> BLING
           </div>
           <div className="col-lg-6">
-            <img src="/Tingo.jpeg" width="100%"/>
+            <img alt="Tingo" src="/Tingo.jpeg" width="100%"/>
             <input type="radio" id="tingo" name="game" value="TINGO"/> TINGO
           </div>
         </div>

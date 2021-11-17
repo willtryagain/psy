@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { useParams } from "react-router-dom";
-import ReactPlayer from 'react-player'
 import axios from 'axios';
 
 function Input(){
@@ -42,7 +41,7 @@ function Input(){
 
   return (
     <div className="container text-center p-5">
-      <h1>{et == 2 || et == 3 ? "STEP 2/3" : "STEP 3/4" }: RECALL WORDS</h1>
+      <h1>{et === 2 || et === 3 ? "STEP 2/3" : "STEP 3/4" }: RECALL WORDS</h1>
       <p> Thank you for being part of this experiment. The experiment is a part of a project being done by IIIT-H students to study the effects of word memorability. The experiment will take around 5 minutes to complete. We appreciate your patience and time taken to be part of this experiment.</p>
       <br/>
       <p>Try to recall as many words as you can and enter them in the box below (space separated). Press the PROCEED Button once you are done.</p>

@@ -36,7 +36,7 @@ class Home extends Component {
           occupation:'',
         })
         console.log(res);
-        if(res.data.experiment_type==0 || res.data.experiment_type==1 ){
+        if(res.data.experiment_type === 0 || res.data.experiment_type === 1 ){
           window.location.href = '/game/'+res.data._id;
         }
         else{

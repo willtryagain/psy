@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useParams } from "react-router-dom";
-import axios from 'axios';
 import "./Game.css"
 
 function Game(){
@@ -19,7 +18,7 @@ function Game(){
       <br/>
       <p>Please play the following game once. Press the PROCEED Button once you are done.</p>
 
-      <iframe className="gameArea" src="https://snake.io/" frameBorder="0" scrolling="no"></iframe>
+      <iframe title="Snake Game" className="gameArea" src="https://snake.io/" frameBorder="0" scrolling="no"></iframe>
 
       <button className="btn btn-success" onClick={proceed}> PROCEED </button>
 
