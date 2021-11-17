@@ -11,7 +11,7 @@ function Video(){
   const [et, setEt] = useState("");
 
   axios
-    .post('http://psy-iiit.herokuapp.com/api/experiment/getEt', {id: id})
+    .post('http://psy-iiit-backend.herokuapp.com/api/experiment/getEt', {id: id})
     .then(res => {
       setEt(res.data.experiment_type)
     })

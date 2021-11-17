@@ -10,7 +10,7 @@ function Final(){
   const [et, setEt] = useState("");
 
   axios
-    .post('http://psy-iiit.herokuapp.com/api/experiment/getEt', {id: id})
+    .post('http://psy-iiit-backend.herokuapp.com/api/experiment/getEt', {id: id})
     .then(res => {
       setEt(res.data.experiment_type)
     })
@@ -32,7 +32,7 @@ function Final(){
 
     if(chosen_game !== ""){
       axios
-        .post('http://psy-iiit.herokuapp.com/api/experiment/updateGame', {id: id, game_chosen: chosen_game})
+        .post('http://psy-iiit-backend.herokuapp.com/api/experiment/updateGame', {id: id, game_chosen: chosen_game})
         .then(res => {
           console.log(res);
           window.location.href = '/thanks/';

@@ -27,7 +27,7 @@ class Home extends Component {
     };
 
     axios
-      .post('https://psy-iiit.herokuapp.com/api/experiment', data)
+      .post('https://psy-iiit-backend.herokuapp.com/api/experiment', data)
       .then(res => {
         this.setState({
           name: '',

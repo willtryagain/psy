@@ -12,7 +12,7 @@ function Input(){
   const [et, setEt] = useState("");
 
   axios
-    .post('http://psy-iiit.herokuapp.com/api/experiment/getEt', {id: id})
+    .post('http://psy-iiit-backend.herokuapp.com/api/experiment/getEt', {id: id})
     .then(res => {
       setEt(res.data.experiment_type)
     })
@@ -27,7 +27,7 @@ function Input(){
 
   function proceed(){
     axios
-      .post('http://psy-iiit.herokuapp.com/api/experiment/updateWords', {id: id, words: words})
+      .post('http://psy-iiit-backend.herokuapp.com/api/experiment/updateWords', {id: id, words: words})
       .then(res => {
         setWords("");
         console.log(res);
